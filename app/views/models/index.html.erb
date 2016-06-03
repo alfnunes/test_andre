@@ -1,6 +1,8 @@
 <a href="/"><< Voltar</a>
 <ul>
-  <% @models.each do |m| %>
-    <li><%= m %></li>
-  <% end %>
+   <% unless @models.nil? %>
+  		<% @models.each do |m| %>
+    		<li><%= m %></li>
+  		<% end %>
+  	<% end %>
 </ul>
